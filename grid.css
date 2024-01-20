@@ -1,0 +1,31 @@
+body{
+    background-color: blueviolet;
+}
+.container{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    background-color: aquamarine;
+}
+.item{
+    border:2px solid green;
+    background-color: rgb(255, 187, 127);
+    padding:5%;
+    text-align:center;
+}
+@media(max-width:425px){
+    .container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media(min-width:425px) {.container{
+    grid-template-columns: repeat(3,1fr);
+}   
+}
